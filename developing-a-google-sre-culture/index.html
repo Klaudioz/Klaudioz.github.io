@@ -19,81 +19,30 @@
   
 
     <section><h1 id="developing-a-google-sre-culture">Developing a Google SRE Culture</h1>
-<h4 id="test">Test</h4>
 <p>Claudio Canales</p>
 </section><section>
-<h1 id="this-is-pretty-cool">This is pretty cool</h1>
-<h2 id="h2">h2</h2>
-<h3 id="h3">h3</h3>
-<p><em>Some italicized text</em></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">http</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;k6/http&#39;</span>;
-<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">sleep</span>, <span style="color:#a6e22e">check</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;k6&#39;</span>;
-
-<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#66d9ef">function</span> () {
-    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">res</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;https://test.k6.io&#39;</span>, {<span style="color:#a6e22e">tags</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;01_Home&#39;</span> }});
-    <span style="color:#a6e22e">check</span>(<span style="color:#a6e22e">res</span>, {
-      <span style="color:#e6db74">&#39;is status 200&#39;</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">r</span>) =&gt; <span style="color:#a6e22e">r</span>.<span style="color:#a6e22e">status</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">200</span>,
-      <span style="color:#e6db74">&#39;text verification&#39;</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">r</span>) =&gt; <span style="color:#a6e22e">r</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">includes</span>(<span style="color:#e6db74">&#34;Collection of simple web-pages suitable for load testing&#34;</span>)
-    });
-    <span style="color:#a6e22e">sleep</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> <span style="color:#ae81ff">5</span>);
-}
-</code></pre></div></section>
-
-<section data-noprocess data-shortcode-slide
-      data-background="#7d64ff"
-      id="hello"
-      data-transition="zoom"
-      data-transition-speed="slow">
-  
-
-
-
-<aside class="notes"><p>Speaker notes here. This shouldn&rsquo;t be visible.</p>
-</aside>
-<p style="color:white">
-
-
-<span class='fragment ' ><h1 id="isa">Isa</h1>
-</span>
-
-
-
-
-<span class='fragment ' ><h2 id="deux">Deux</h2>
-</span>
-
-
-
-
-<span class='fragment ' ><h3 id="drie">Drie</h3>
-</span>
-
-
-</p>
+<h1 id="whats-this-">What&rsquo;s this ?</h1>
+<ul>
+<li></li>
+</ul>
 </section><section>
-
-
-<section data-shortcode-section>
-<h1 id="whats-a-vertical-slide">What&rsquo;s a vertical slide?</h1>
-</section><section>
-<h1 id="oh-cool">Oh cool!</h1>
-
-</section>
-</section><section>
-<h4 id="aquí-un-video">Aquí un video</h4>
-<iframe width="1120" height="630" src="https://www.youtube.com/embed/WrDV8iIdCy8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</section>
-
-<section data-noprocess data-shortcode-slide
-      data-background-image="lucrezia-carnelos-AsM4T46tqcU-unsplash.jpg"
-      data-transition="zoom"
-      data-transition-speed="slow">
-  
-<p align="right">
-	Photo by <br><a href="https://unsplash.com/@ciabattespugnose">Lucrezia Carnelos</a><br>on <a href="https://unsplash.com/s/photos/geek">Unsplash</a>.
-</p>
-</section><section>
-<p>Maybe I should actually write this presentation now.</p>
+<h1 id="objectives">Objectives</h1>
+<ul>
+<li>Explain why SRE is important to an organization’s IT transformation project&rsquo;s success.</li>
+<li>Explain how SRE practices align to DevOps pillars</li>
+<li>Articulate the pillars of DevOps</li>
+<li>Distinguish between DevOps and SRE</li>
+<li>Understand the value SRE can provide to an organization.</li>
+<li>Describe the technical fundamentals of SRE: SLOs, error budgets, and blameless postmortems.</li>
+<li>Describe the cultural fundamentals of SRE: Blamelessness, psychological safety, unified vision, collaboration and communication, and knowledge sharing.</li>
+<li>Describe the technical fundamentals of SRE: CI/CD, canarying, and toil automation</li>
+<li>Describe the cultural fundamentals of SRE: Design thinking, prototyping, psychology of change, and resistance to change</li>
+<li>Describe the technical fundamentals of SRE: Measure toil and reliability, and monitoring</li>
+<li>Describe the cultural fundamentals of SRE: Goal setting, tansparency, and data-based decision making</li>
+<li>Assess organizational maturity for SRE</li>
+<li>Identify where SRE can be applied within a business</li>
+<li>Recognize the skills an SRE needs</li>
+</ul>
 </section>
 
   
