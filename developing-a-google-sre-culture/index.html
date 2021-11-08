@@ -21,24 +21,32 @@
     <section><h2 id="developing-a-google-sre-culture">Developing a Google SRE Culture</h2>
 <p>Claudio Canales - Seegrid</p>
 </section><section>
-<h1 id="whats-this">What&rsquo;s this?</h1>
+<h1 id="whats-this-">What&rsquo;s this? 🎓</h1>
 <ul>
-<li>Coursera course developed by Google.</li>
-<li>Videos, readings and Quizzes.</li>
-<li>Three weeks, seven modules and final assessment.</li>
+<li>Coursera course developed by Google with videos, readings and Quizzes.</li>
+<li>Duration: Three weeks and approve the final test.</li>
+<li>List of modules:
+<ul>
+<li>Module 1: Welcome to Developing a Google SRE Culture.</li>
+<li><strong>Module 2</strong>: DevOps, SRE, and Why They Exist.</li>
+<li><strong>Module 3</strong>: SLOs with Consequences.</li>
+<li>Module 4: Make Tomorrow Better than Today.</li>
+<li>Module 5: Regulate Workload.</li>
+</ul>
+</li>
 </ul>
 </section><section>
 <h1 id="objectives-">Objectives ✅</h1>
 <ul>
-<li>Understand the value SRE can provide to an organization.</li>
-<li>Learn what are the technical and cultural fundamentals of SRE in detail.
+<li>Understand the <strong>value</strong> SRE can provide to an organization.</li>
+<li>Learn what are the <strong>technical and cultural fundamentals</strong> of SRE in detail.
 <ul>
 <li>Technical examples: CI/CD, canarying, and toil automation.</li>
-<li>Cultural examples: Design thinking, prototyping, psychology and resistance to change.</li>
+<li>Cultural examples: Design thinking, prototyping, psychology and <strong>resistance to change</strong>.</li>
 </ul>
 </li>
-<li>Identify where SRE can be applied within a business to assess organizational maturity.</li>
-<li>Identify what skills to look for in a SRE, and how to train your existing workforce.</li>
+<li>Identify where SRE can be <strong>applied within a business</strong> to assess organizational maturity.</li>
+<li>Identify what <strong>skills</strong> to look for in a SRE, and how to <strong>train</strong> your existing workforce.</li>
 </ul>
 </section><section>
 <h1 id="what-is-sre-">What is SRE? 🧐</h1>
@@ -49,7 +57,7 @@
 <li><strong>Mission</strong>: To protect, provide for, and progress software and systems with consistent focus on availability, latency, performance, and capacity.</li>
 </ul>
 </section><section>
-<h1 id="what-is-the-problem-">What is the problem? 🔥</h1>
+<h2 id="what-is-the-problem-">What is the problem? 🔥</h2>
 <ul>
 <li>Customers aren&rsquo;t happy but everything is &ldquo;green&rdquo;. There is something wrong.</li>
 <li>Developers and operations teams working in silos with different priorities.</li>
@@ -65,7 +73,7 @@
 <li>Measure everything.</li>
 </ul>
 </section><section>
-<h1 id="where-sre-comes-in">Where SRE comes in?</h1>
+<h2 id="where-sre-comes-in-">Where SRE comes in? 💡</h2>
 <ul>
 <li>While DevOps philosophy highlights critical ways for IT teams to operate, it doesn’t give explicit guidance on how an organization should implement practices to be successful.</li>
 <li>Just as DevOps aims to close the gap between software development and software operations, this new SRE approach is a concrete way to solve the problems that the DevOps philosophy addresses.</li>
@@ -97,6 +105,11 @@
 <li>It&rsquo;s done by documenting and conducting a blameless Postmortem.</li>
 </ul>
 </section><section>
+<h1 id="blameless-postmortem-">Blameless postmortem 👂</h1>
+<ul>
+<li>A blameless postmortem only focuses on the root causes of an incident without accusing a particular person or team, or their actions or behavior. Specific people will write and review the postmortem, but everyone who had a role in the event will be a part of the postmortem process so you can collect as much information as possible.</li>
+</ul>
+</section><section>
 <h1 id="components-of-a-postmortem-">Components of a postmortem 📓</h1>
 <ul>
 <li>Details of the incident and its timeline.</li>
@@ -104,6 +117,244 @@
 <li>The incident’s impact.</li>
 <li>Its trigger and root cause or causes.</li>
 <li>The follow-up actions to prevent its recurrence.</li>
+</ul>
+</section><section>
+<h1 id="postmortem-goals-">Postmortem goals 🎯</h1>
+<ul>
+<li>Ensure that all the root causes are properly understood by the team.</li>
+<li>Define or take effective actions to prevent the issue from occurring again.</li>
+<li>Reduce the likelihood of stressful outages.</li>
+<li>Avoid multiplying complexity.</li>
+<li>Learn from your mistakes and those of others.</li>
+</ul>
+</section><section>
+<h1 id="psychological-safety-">Psychological safety 👷🏻‍♀️</h1>
+<ul>
+<li>The belief that a person will not be punished or humiliated for speaking up with ideas, questions, concerns, or mistakes.</li>
+<li>Blamelessness can have an immense positive effect on the culture of your organization. Specifically, it creates a culture of psychological safety for your teams.</li>
+</ul>
+</section><section>
+<h1 id="low-psychological-safety-">Low psychological safety 👎🏻</h1>
+<ul>
+<li>People keep concerns or ideas to themselves.</li>
+<li>People are afraid of looking incompetent or ignorant.</li>
+<li>People are afraid of being ridiculed.</li>
+<li><strong>Consequence</strong>: Stifled learning and innovation.</li>
+</ul>
+</section><section>
+<h1 id="psychologically-safe-environments-">Psychologically safe environments 👍🏻</h1>
+<ul>
+<li>Bridging is encouraged.</li>
+<li>Cooperation is high.</li>
+<li>Messengers are not punished when delivering bad news.</li>
+<li>Failure is treated as opportunity for improvement.</li>
+<li>New ideas are welcomed.</li>
+<li>These attributes lead to improvements in lead time, deployment frequency, and time to restore. 👏🏻</li>
+</ul>
+</section><section>
+<h1 id="why-do-people-blame-">Why do people blame? 🤔</h1>
+<ul>
+<li>Blamelessness is a behavior that fosters psychological safety.</li>
+<li>Research has shown there are two major factors that fuel people’s tendency to blame others: <strong>Hindsight bias</strong> and <strong>discomfort discharge</strong>.</li>
+</ul>
+</section><section>
+<h1 id="hindsight-bias-">Hindsight bias ✨</h1>
+<ul>
+<li>Hindsight bias is the tendency of people to overestimate their ability to have predicted an outcome, even though it could not have possibly been predicted.</li>
+<li>People often fail to realize that it’s only obvious now that it has already happened. A simple example of hindsight bias is insisting that you knew that the losing team of a sporting event was going to lose all along, just because you originally said you predicted it.</li>
+<li><strong>In working environments</strong>, hindsight bias can often lead to blaming the person in charge, saying they should have seen the obvious and planned for it.</li>
+</ul>
+</section><section>
+<h1 id="discomfort-discharge-">Discomfort discharge 😖</h1>
+<ul>
+<li>Blame exists to discharge discomfort and pain at a neurobiological level.</li>
+<li>Sociologists claim that we are pretty much wired for blame, because it’s a natural way to release discomfort. 🤷🏻‍♂️</li>
+<li>Mistakes are valuable opportunities to learn from mistakes.</li>
+<li>People tend to hide information or don’t declare incidents because they’re scared of punishment.</li>
+<li>People are afraid to ask the questions that may lead to identifying the root causes of an incident.</li>
+</ul>
+</section><section>
+<h1 id="focus-on-blamelessness-">Focus on blamelessness 🔎</h1>
+<ul>
+<li><strong>Blamelessness</strong>: It&rsquo;s the notion of switching responsibility from people to systems and processes.</li>
+<li>Assume good intentions. Investigate.</li>
+<li>Focus on systems and processes, <strong>not people</strong>.</li>
+<li>Innovation requires risk taking (100% success 🦄).</li>
+</ul>
+</section><section>
+<h3 id="reduce-organizational-silos-with-slos-and-error-budgets-">Reduce organizational silos with SLOs and Error Budgets 💰</h3>
+<ul>
+<li>SRE employs practices that effectively break down these silos and <strong>promote shared ownership</strong> between development and operations teams.</li>
+<li>These fundamentals help teams maintain reliability of their services.</li>
+</ul>
+</section><section>
+<h1 id="whats-reliability-">What&rsquo;s reliability 🔢</h1>
+<ul>
+<li>A simple way: your service’s “good” time divided by its total time.</li>
+<li>It&rsquo;s not good for complex systems:
+<ul>
+<li>How do you measure “good” time of a server that currently doesn’t receive requests?</li>
+<li>Or what if one of three servers is down. Does that mean your service is down, or is it up?</li>
+</ul>
+</li>
+<li>Better: Fraction of real users who experience a service that is working and available.</li>
+</ul>
+</section><section>
+<h1 id="error-budget">Error budget</h1>
+<ul>
+<li><strong>Error budget</strong>: Amount of unreliability you are willing to tolerate.</li>
+<li>100% reliability doesn&rsquo;t exist.</li>
+<li>As long as the measured uptime is above your target—meaning, as long as you have error budget remaining—you can push new feature releases.</li>
+<li>You can spend this remaining budget on something else: (expected system changes, inevitable failures in hardware, networks, planned downtime risky experiments, etc)</li>
+<li>Error budgets create a common incentive for developers and SREs to find the right balance between innovation and reliability. Developer teams can manage the error budget on their own, knowing that unrealistic reliability targets will slow down innovation.</li>
+<li>It creates a <strong>shared responsibility</strong> between teams for system uptime, as infrastructure failures take away developers’ error budget.</li>
+</ul>
+</section><section>
+<h1 id="definitions-service-levels-">Definitions: Service levels ✍🏻</h1>
+<ul>
+<li><strong>SLA</strong> (Service level agreement): The agreement you make with your clients or users. What happens if you don&rsquo;t meet the SLO/SLI. It&rsquo;s a contract.</li>
+<li><strong>SLO</strong> (Service level objectives): These are the target values or goals for the performance. e.g 99.9% of the time we &hellip;</li>
+<li><strong>SLI</strong> (Service level indicators): The real numbers of your performance. It&rsquo;s a metric to calculate SLO. e.g RED metrics: Rate, Error, Duration</li>
+</ul>
+</section><section>
+<h1 id="slos-">SLOs 🎯</h1>
+<ul>
+<li>Precise numerical target for system reliability.</li>
+<li>Since you want your dev teams to work at a high velocity, SLOs can help them determine how fast is too fast.</li>
+<li>Measuring SLO performance gives a real-time indication of the reliability cost of new features.</li>
+</ul>
+</section><section>
+<h1 id="sre-cultural-practices-">SRE cultural practices 👨‍👩‍👧‍👦</h1>
+<ul>
+<li>These practices are aligned with the practices of SLOs and error budgets.</li>
+<li>Specifically, organizations developing SRE culture should focus on:
+<ul>
+<li>Creating a unified vision.</li>
+<li>Determining what collaboration looks like.</li>
+<li>Sharing knowledge among teams.</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h1 id="unified-vision-">Unified vision 👀</h1>
+<ul>
+<li>Your IT team’s vision should support the company’s vision.</li>
+<li>It includes core values, purpose, mission, strategy, and goals.</li>
+</ul>
+</section><section>
+<h1 id="values">Values</h1>
+<ul>
+<li>Your response to others.</li>
+<li>Your commitments to personal and organizational goals.</li>
+<li>The way you spend your time.</li>
+<li>The way you operate as a team.</li>
+</ul>
+</section><section>
+<h1 id="core-values">Core values</h1>
+<ul>
+<li>By developing core values, you can help your team:
+<ul>
+<li>Build trust and psychological safety with each other.</li>
+<li>Be more willing to take risks.</li>
+<li>Be more open to learning and growing.</li>
+<li>Feel a greater sense of inclusion and commitment.</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h1 id="team-purpose">Team purpose</h1>
+<ul>
+<li>A team’s purpose refers to <strong>why it exists</strong>.</li>
+<li>Internal research by Google has shown that teams that have a purpose and meaning to their work have <strong>higher life and work satisfaction</strong>, stronger intra-team connections, and <strong>less conflict</strong>.</li>
+</ul>
+</section><section>
+<h1 id="goals">Goals</h1>
+<ul>
+<li>A goal is what you strive to attain.</li>
+<li>Google uses OKRs (Objectives and Key Results).</li>
+</ul>
+</section><section>
+<h1 id="okrs">OKRs</h1>
+<ul>
+<li>OKRs are different from other goal-setting techniques. The idea behind OKRs is to set very ambitious goals.</li>
+<li>OKRs can enable teams to focus on the big bets and accomplish more than the team thought was possible, even if they don’t fully attain their intended goal.</li>
+<li>OKRs can encourage people to try new things, prioritize work, and learn from both success and failure.</li>
+<li>And while the team may not reach every OKR, it gives them something to strive for together.</li>
+</ul>
+</section><section>
+<h1 id="collaboration-and-communication-">Collaboration and communication 🗣</h1>
+<ul>
+<li>Given the globally distributed nature of SRE teams, effective communication has always been a high priority in SRE.</li>
+<li>High priority for SREs.</li>
+<li>Common approaches to platforms.</li>
+<li>Focus on problem-solving.</li>
+</ul>
+</section><section>
+<h1 id="examples-of-effective-communication">Examples of effective communication</h1>
+<ul>
+<li>Service-oriented meetings:
+<ul>
+<li>Review state of service.</li>
+<li>Weekly 30-60 minutes.</li>
+<li>Set agenda.</li>
+</ul>
+</li>
+<li>Good team composition:
+<ul>
+<li>Variable definition of a team is variable. remote/local/cross-continental in between.</li>
+<li>Excellent communication skills are required to effectively collaborate across time zones.</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h1 id="team-composition-roles">Team composition roles</h1>
+<ul>
+<li>A <strong>tech lead</strong> who sets the technical direction of the team. This person comments on everyone’s code, holds quarterly direction presentations, and builds consensus in the team.</li>
+<li>A <strong>manager</strong> who runs performance management and acts as the first point of contact for the team.</li>
+<li>A <strong>project manager</strong> who comments on a design doc and writes code.</li>
+</ul>
+</section><section>
+<h1 id="knowledge-sharing-">Knowledge sharing 📚</h1>
+<ul>
+<li>Knowledge sharing helps reduce organizational silos.</li>
+<li>Well hired and trained SRE teams are adept at performing more than one job function and have the skills to step into another as needed. In order to create this, your organization needs to focus on cultivating knowledge sharing among its team members.</li>
+<li>Ways to ensure that this happens on your team:
+<ul>
+<li>Cross-training</li>
+<li>Employee-to-employee network</li>
+<li>Job shadowing</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h1 id="knowledge-sharing-cross-training-benefits-">Knowledge sharing: Cross-training benefits 🏋🏼</h1>
+<ul>
+<li>Trains team members to be flexible.</li>
+<li>Helps reduce costs.</li>
+<li>Improves morale.</li>
+<li>Reduces turnover.</li>
+<li>Boosts productivity.</li>
+<li>Enhances scheduling flexibility.</li>
+<li>Increases job satisfaction.</li>
+</ul>
+</section><section>
+<h1 id="knowledge-sharing-employee-to-employee-network-">Knowledge sharing: Employee-to-employee network 🕸</h1>
+<ul>
+<li>Employees can develop and grow by teaching others, given that they have first-hand knowledge on a topic.</li>
+<li>At Google, 80% of all tracked trainings are run through an employee-to-employee network called g2g, or Googler-to-Googler.</li>
+<li>They can participate in a variety of ways, such as teaching courses, providing 1:1 mentoring, and designing learning materials.</li>
+</ul>
+</section><section>
+<h1 id="knowledge-sharing-job-shadowing-">Knowledge sharing: Job shadowing 👷🏻‍♀️</h1>
+<ul>
+<li>Expert knowledge and exposure to teammates.</li>
+<li>Hands-on experience.</li>
+<li>Opportunity to ask questions.</li>
+<li>Introduction to the concept of gradual change.</li>
+<li>A way to spot opportunities for cross-functional collaboration.</li>
+<li>A great way to understand the nuances of what a particular job role entails.</li>
+<li>A psychologically safe environment where it’s normal to ask questions and learn.</li>
+<li>A way to pair up your team members that helps to scale and retain knowledge.</li>
 </ul>
 </section>
 
