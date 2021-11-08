@@ -18,30 +18,92 @@
       <div class="slides">
   
 
-    <section><h1 id="developing-a-google-sre-culture">Developing a Google SRE Culture</h1>
-<p>Claudio Canales</p>
+    <section><h2 id="developing-a-google-sre-culture">Developing a Google SRE Culture</h2>
+<p>Claudio Canales - Seegrid</p>
 </section><section>
-<h1 id="whats-this-">What&rsquo;s this ?</h1>
+<h1 id="whats-this">What&rsquo;s this?</h1>
 <ul>
-<li></li>
+<li>Coursera course developed by Google.</li>
+<li>Videos, readings and Quizzes.</li>
+<li>Three weeks, seven modules and final assessment.</li>
 </ul>
 </section><section>
-<h1 id="objectives">Objectives</h1>
+<h1 id="objectives-">Objectives ✅</h1>
 <ul>
-<li>Explain why SRE is important to an organization’s IT transformation project&rsquo;s success.</li>
-<li>Explain how SRE practices align to DevOps pillars</li>
-<li>Articulate the pillars of DevOps</li>
-<li>Distinguish between DevOps and SRE</li>
 <li>Understand the value SRE can provide to an organization.</li>
-<li>Describe the technical fundamentals of SRE: SLOs, error budgets, and blameless postmortems.</li>
-<li>Describe the cultural fundamentals of SRE: Blamelessness, psychological safety, unified vision, collaboration and communication, and knowledge sharing.</li>
-<li>Describe the technical fundamentals of SRE: CI/CD, canarying, and toil automation</li>
-<li>Describe the cultural fundamentals of SRE: Design thinking, prototyping, psychology of change, and resistance to change</li>
-<li>Describe the technical fundamentals of SRE: Measure toil and reliability, and monitoring</li>
-<li>Describe the cultural fundamentals of SRE: Goal setting, tansparency, and data-based decision making</li>
-<li>Assess organizational maturity for SRE</li>
-<li>Identify where SRE can be applied within a business</li>
-<li>Recognize the skills an SRE needs</li>
+<li>Learn what are the technical and cultural fundamentals of SRE in detail.
+<ul>
+<li>Technical examples: CI/CD, canarying, and toil automation.</li>
+<li>Cultural examples: Design thinking, prototyping, psychology and resistance to change.</li>
+</ul>
+</li>
+<li>Identify where SRE can be applied within a business to assess organizational maturity.</li>
+<li>Identify what skills to look for in a SRE, and how to train your existing workforce.</li>
+</ul>
+</section><section>
+<h1 id="what-is-sre-">What is SRE? 🧐</h1>
+<ul>
+<li>It&rsquo;s both a practice and a job role, where engineering directly supports software operations.</li>
+<li>At Google, SRE is described by its founder as &ldquo;what happens when you ask a software engineer to design an operations team.&rdquo;</li>
+<li>SRE approach is a concrete way to solve problems that the DevOps philosophy addresses.</li>
+<li><strong>Mission</strong>: To protect, provide for, and progress software and systems with consistent focus on availability, latency, performance, and capacity.</li>
+</ul>
+</section><section>
+<h1 id="what-is-the-problem-">What is the problem? 🔥</h1>
+<ul>
+<li>Customers aren&rsquo;t happy but everything is &ldquo;green&rdquo;. There is something wrong.</li>
+<li>Developers and operations teams working in silos with different priorities.</li>
+</ul>
+</section><section>
+<h1 id="devops-principles-">DevOps principles 🧠</h1>
+<ul>
+<li><em>DevOps is a philosophy, versus a development methodology or technology.</em></li>
+<li>Accept failure as normal.</li>
+<li>Reduce organizational silos.</li>
+<li>Implement gradual change.</li>
+<li>Leverage tooling and automation.</li>
+<li>Measure everything.</li>
+</ul>
+</section><section>
+<h1 id="where-sre-comes-in">Where SRE comes in?</h1>
+<ul>
+<li>While DevOps philosophy highlights critical ways for IT teams to operate, it doesn’t give explicit guidance on how an organization should implement practices to be successful.</li>
+<li>Just as DevOps aims to close the gap between software development and software operations, this new SRE approach is a concrete way to solve the problems that the DevOps philosophy addresses.</li>
+</ul>
+</section><section>
+<h1 id="sre-pillars-">SRE pillars 🏛</h1>
+<ul>
+<li>Blamelessness.</li>
+<li>Share ownership.</li>
+<li>Reduce cost of failure.</li>
+<li>Toil automation.</li>
+<li>Measure toil and reliability.</li>
+</ul>
+</section><section>
+<h1 id="experienced-sres-">Experienced SREs 👴🏼</h1>
+<ul>
+<li>SRE team should:
+<ul>
+<li><strong>Comfortable with failure</strong>: incidents and outages are going to occur.</li>
+<li><strong>Eliminate ambiguity</strong>: With monitoring and Observability.</li>
+<li><strong>Establish and document processes</strong>: Incident response and management, handoffs, and other outage activities.</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h3 id="accept-failure-as-normal-with-blameless-postmortems-">Accept failure as normal with Blameless postmortems 🔥</h3>
+<ul>
+<li>After an outage, it&rsquo;s important to understand why an incident occurred, and then take steps to make sure it doesn&rsquo;t happen again in the same way.</li>
+<li>It&rsquo;s done by documenting and conducting a blameless Postmortem.</li>
+</ul>
+</section><section>
+<h1 id="components-of-a-postmortem-">Components of a postmortem 📓</h1>
+<ul>
+<li>Details of the incident and its timeline.</li>
+<li>The actions taken to mitigate or resolve the incident.</li>
+<li>The incident’s impact.</li>
+<li>Its trigger and root cause or causes.</li>
+<li>The follow-up actions to prevent its recurrence.</li>
 </ul>
 </section>
 
@@ -65,7 +127,7 @@
 </script>
 
 <script type="application/json" id="reveal-hugo-site-params">null</script>
-<script type="application/json" id="reveal-hugo-page-params">{"custom_theme":"reveal-hugo/themes/robot-lung.css","highlight_theme":"color-brewer","margin":0.2,"transition":"slide","transition_speed":"fast"}</script>
+<script type="application/json" id="reveal-hugo-page-params">{"custom_theme":"reveal-hugo/themes/robot-lung.css","highlight_theme":"color-brewer","margin":0.2,"slidenumber":"true","transition":"slide","transition_speed":"fast"}</script>
 
 <script src="/reveal-js/js/reveal.js"></script>
 
